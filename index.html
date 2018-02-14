@@ -5,11 +5,29 @@
   <title>Pokedex</title>
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.100.2/css/materialize.min.css">
   <link rel="stylesheet" href="assets/css/style.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
 </head>
 <body>
-  <div class="pokedex">
-    
+  <div>
+    <div class="row">
+      <div class="col s6 offset-s1">
+        <div class="pokedex">
+          <div id="pokecontainer"></div>
+        </div>
+      </div>
+      <div class="col s3 offset-s1">
+        <div class="consulting">
+          <h5>ingresa un pokemon</h5>
+          <form id="searchingPoke">
+          <label for="search-poke" class="hidden"></label>
+          <input type="text" id="search-poke" name="search-poke" placeholder="ej. cubone" required>
+          <!-- <input type="submit" id="submit-btn" value="submit"> no necesita botón, mish-->
+      </form>
+        </div>
+      </div>
+    </div>
   </div>
+
 
 
 

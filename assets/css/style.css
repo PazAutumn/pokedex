@@ -1,8 +1,8 @@
-* {
+/** {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
-}
+}*/
 
 body {
   background-image: url(../img/pokemon_twitch_theme_a_2a_by_masterq2-danm4kn.gif);
@@ -14,9 +14,27 @@ body {
 }
 
 .pokedex {
-  width: 55%;
+  /*width: 55%;*/
   height: 82vh;
   border: 1px solid black;
-  margin-top: 20px;
-  margin-left: 84px;
+  /*margin-top: 20px;
+  margin-left: 84px;*/
+  margin: 3em 0;
+}
+
+.consulting {
+  border: 1px solid black;
+  height: 10em;
+  margin: 4em 0 0 4em;
+}
+
+.consulting h5 {
+  text-align: center;
+  color: #FFF
+}
+
+#search-poke {
+  text-align: center;
+  font-family: monospace;
+  margin: 2em 0;
 }
