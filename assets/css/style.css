@@ -1,0 +1,22 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  background-image: url(../img/pokemon_twitch_theme_a_2a_by_masterq2-danm4kn.gif);
+  background-size: 90%;
+  background-repeat: no-repeat;
+  background-position: top;
+  background-color: #D30A40;
+
+}
+
+.pokedex {
+  width: 55%;
+  height: 82vh;
+  border: 1px solid black;
+  margin-top: 20px;
+  margin-left: 84px;
+}
