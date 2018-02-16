@@ -8,8 +8,13 @@ body {
 }
 
 .pokedex {
-  height: 80vh;
-  margin: 2em 0;
+  width: 47.7em;
+  height: 35.3em;
+  margin: 1.4em 4.9em;
+  border:1px solid black;
+  padding: 20px;
+  background-color: #084035;
+  color: #D3D3D3;
 }
 
 .pokedex p {
@@ -20,11 +25,12 @@ body {
   border: 1px solid black;
   height: 10em;
   margin: 4em 0 0 4em;
+  background-color: #084035;
 }
 
 .consulting h5 {
   text-align: center;
-  color: #FFF
+  color: #D3D3D3;
 }
 
 #search-poke {
@@ -34,10 +40,10 @@ body {
 }
 
 .pokeimg {
-  margin-left: 4em;
-  border: 5px solid black;
+  border: 2px solid black;
   width: 13em;
   height: auto;
+  background-color: #084035;
 }
 
 .pokename {
