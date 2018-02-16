@@ -5,17 +5,24 @@
   <title>Pokedex</title>
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.100.2/css/materialize.min.css">
   <link rel="stylesheet" href="assets/css/style.css">
-  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+  <link href="https://fonts.googleapis.com/css?family=VT323" rel="stylesheet">
 </head>
 <body>
   <div>
     <div class="row">
-      <div class="col s6 offset-s1">
+      <div class="col s6 center">
         <div class="pokedex">
-          <div id="pokecontainer"></div>
+          <div class="row">
+            <div class="col s6" id="pokeimg">
+              
+            </div>
+            <div class="col s6" id="pokeinfo">
+              
+            </div>
+          </div>
         </div>
       </div>
-      <div class="col s3 offset-s1">
+      <div class="col s3 offset-s2">
         <div class="consulting">
           <h5>ingresa un pokemon</h5>
           <form id="searchingPoke">
@@ -28,7 +35,7 @@
     </div>
   </div>
 
-
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
   <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.100.2/js/materialize.min.js"></script>
   <script src="assets/js/app.js"></script>
 </body>

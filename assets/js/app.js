@@ -1,12 +1,15 @@
 const form = document.getElementById('searchingPoke');
-const searchField = document.getElementById('search-poke');
-const responseContainer = document.getElementById('pokecontainer');
+const searchPokemon = document.getElementById('search-poke');
+const pokeimage = document.getElementById('pokeimg');
+const pokeinfo = document.getElementById('pokeinfo');
 let searchedPoke;
 
 form.addEventListener('submit', function(e) {
   e.preventDefault();
-  responseContainer.innerHTML = '';
-  searchedPoke = searchField.value;
+  pokeimage.innerHTML = '';
+  pokeinfo.innerHTML = '';
+  searchedPoke = searchPokemon.value;
+  searchedPoke = searchedPoke.toLowerCase();
   getPokemon();
 });
 
@@ -25,8 +28,36 @@ function handleError() {
 }
 
 function addPoke() {
-  // no cambiar responseText, haha
   const data = JSON.parse(this.responseText);
-  const response = data.response;
-  console.log(data);
-}
+  const notFound = data.detail;
+  if(notFound == 'Not found.'){
+    alert('Pokemon no encontrado, intenta nuevamente');
+  } else {
+    searchPokemon.value = '';
+    const name = data.name;
+    const img = data.sprites.front_default;
+    const pokeid = data.id;
+    const move1 = data.moves[0].move.name;
+    const move2 = data.moves[1].move.name;
+    const type = data.types[0].type.name;
+    const ability1 = data.abilities[0].ability.name;
+    const ability2 = data.abilities[1].ability.name;
+
+    let pokeimg= document.createElement('img');
+    pokeimg.setAttribute('src', img);
+    pokeimg.setAttribute('class','pokeimg');
+    
+    let pokename = document.createElement('h3');
+    pokename.innerHTML = '#' + pokeid + ' - ' + name;
+    pokename.setAttribute('class','pokename');
+
+    let pokedescription = document.createElement('p');
+    pokedescription.innerText = 'Type: ' + type + `\n` +
+    'Moves: ' + move1 + ', ' + move2 + `\n` +
+    'Abilities: ' + ability1 + ', ' + ability2;
+
+    pokeimage.appendChild(pokeimg);
+    pokeinfo.appendChild(pokename);
+    pokeinfo.appendChild(pokedescription);
+  }
+};

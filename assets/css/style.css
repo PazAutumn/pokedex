@@ -4,13 +4,16 @@ body {
   background-repeat: no-repeat;
   background-position: top;
   background-color: #D30A40;
-
+  font-family: 'VT323', monospace;
 }
 
 .pokedex {
   height: 80vh;
-  border: 1px solid black;
   margin: 2em 0;
+}
+
+.pokedex p {
+  font-size: 1.6em;
 }
 
 .consulting {
@@ -28,4 +31,17 @@ body {
   text-align: center;
   font-family: monospace;
   margin: 2em 0;
+}
+
+.pokeimg {
+  margin-left: 4em;
+  border: 5px solid black;
+  width: 13em;
+  height: auto;
+}
+
+.pokename {
+  margin-top: 2em;
+  font-weight: bold;
+  font-size: 3.2em;
 }
