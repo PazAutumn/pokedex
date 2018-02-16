@@ -8,9 +8,9 @@ body {
 }
 
 .pokedex {
-  width: 47.7em;
-  height: 35.3em;
-  margin: 1.4em 4.9em;
+  width: 45em;
+  height: 34.2em;
+  margin: 2.5em 7em;
   border:1px solid black;
   padding: 20px;
   background-color: #084035;
@@ -43,7 +43,7 @@ body {
   border: 2px solid black;
   width: 13em;
   height: auto;
-  background-color: #084035;
+  background-color: #D3D3D3;
 }
 
 .pokename {
