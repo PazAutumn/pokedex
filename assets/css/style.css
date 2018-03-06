@@ -1,20 +1,17 @@
 body {
-  background-image: url(../img/pokemon_twitch_theme_a_2a_by_masterq2-danm4kn.gif);
-  background-size: 90%;
-  background-repeat: no-repeat;
-  background-position: top;
   background-color: #D30A40;
   font-family: 'VT323', monospace;
 }
 
 .pokedex {
-  width: 45em;
-  height: 34.2em;
-  margin: 2.5em 7em;
-  border:1px solid black;
+  width: 90%;
+  min-height: 60vh;
+  margin: 2.5em auto;
+  border: .3em solid #FFF;
   padding: 20px;
   background-color: #084035;
   color: #D3D3D3;
+  border-radius: 2em 4em 2em 8em;
 }
 
 .pokedex p {
@@ -22,10 +19,12 @@ body {
 }
 
 .consulting {
-  border: 1px solid black;
-  height: 10em;
-  margin: 4em 0 0 4em;
+  border: .3em solid #FFF;
+  border-radius: 1em;
+  min-height: 20vh;
+  margin: 4em auto 0em;
   background-color: #084035;
+  width: 90%;
 }
 
 .consulting h5 {
@@ -36,18 +35,18 @@ body {
 #search-poke {
   text-align: center;
   font-family: monospace;
-  margin: 2em 0;
+  margin: 1em 0;
+  color: #FFF;
 }
 
 .pokeimg {
-  border: 2px solid black;
-  width: 13em;
+  width: 95%;
   height: auto;
   background-color: #D3D3D3;
 }
 
 .pokename {
-  margin-top: 2em;
+  margin-top: 30%;
   font-weight: bold;
   font-size: 3.2em;
 }
