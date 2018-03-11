@@ -2,6 +2,7 @@
 <html lang="en">
 <head>
   <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Pokedex</title>
   <link rel="icon" type="image/png" sizes="32x32" href="assets/img/favicon-32x32.png">
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.100.2/css/materialize.min.css">
@@ -9,32 +10,32 @@
   <link href="https://fonts.googleapis.com/css?family=VT323" rel="stylesheet">
 </head>
 <body>
-  <div>
+  <div class="container">
     <div class="row">
-      <div class="col s7">
-        <div class="pokedex">
-          <div class="row">
-            <div class="col s6" id="pokeimg">
-              
-            </div>
-            <div class="col s6" id="pokeinfo">
-              
-            </div>
-          </div>
-        </div>
-      </div>
-      <div class="col s3 push-s1">
+      <div class="col s12 m4">
         <div class="consulting">
           <h5>ingresa un pokemon</h5>
           <form id="searchingPoke">
           <label for="search-poke" class="hidden"></label>
           <input type="text" id="search-poke" name="search-poke" placeholder="ej. cubone" required>
           <!-- <input type="submit" id="submit-btn" value="submit"> no necesita botón, mish-->
-      </form>
-        </div>
-      </div>
-    </div>
-  </div>
+          </form>
+        </div> <!-- /.consulting -->
+      </div> <!-- /.col -->
+      <div class="col s12 m8">
+        <div class="pokedex">
+          <div class="row">
+            <div class="col s5" id="pokeimg">
+              
+            </div>
+            <div class="col s7" id="pokeinfo">
+              
+            </div>
+          </div>
+        </div> <!-- /.pokedex -->
+      </div> <!-- /.col -->
+    </div> <!-- /.row -->
+  </div> <!-- /.container -->
 
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
   <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.100.2/js/materialize.min.js"></script>
