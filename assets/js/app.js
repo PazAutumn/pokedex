@@ -2,12 +2,14 @@ const form = document.getElementById('searchingPoke');
 const searchPokemon = document.getElementById('search-poke');
 const pokeimage = document.getElementById('pokeimg');
 const pokeinfo = document.getElementById('pokeinfo');
+const pokemonsname = document.getElementById('pokemonsname');
 let searchedPoke;
 
 form.addEventListener('submit', function(e) {
   e.preventDefault();
   pokeimage.innerHTML = '';
   pokeinfo.innerHTML = '';
+  pokemonsname.innerHTML = '';
   searchedPoke = searchPokemon.value;
   searchedPoke = searchedPoke.toLowerCase();
   getPokemon();
@@ -57,7 +59,7 @@ function addPoke() {
     'Abilities: ' + ability1 + ', ' + ability2;
 
     pokeimage.appendChild(pokeimg);
-    pokeinfo.appendChild(pokename);
+    pokemonsname.appendChild(pokename);
     pokeinfo.appendChild(pokedescription);
   }
 };
