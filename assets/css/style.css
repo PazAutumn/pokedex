@@ -5,8 +5,8 @@ body {
 
 .pokedex {
   width: 90%;
-  min-height: 60vh;
-  margin: 2.5em auto;
+  min-height: 50vh;
+  margin: 2.5em auto 0;
   border: .3em solid #FFF;
   padding: 20px;
   background-color: #084035;
@@ -22,12 +22,9 @@ body {
   border: .3em solid #FFF;
   border-radius: 1em;
   min-height: 20vh;
-  margin: 4em auto 0em;
+  margin: 2em auto 0em;
   background-color: #084035;
   width: 90%;
-}
-
-.consulting h5 {
   text-align: center;
   color: #D3D3D3;
 }
@@ -40,13 +37,27 @@ body {
 }
 
 .pokeimg {
-  width: 95%;
+  width: 90%;
   height: auto;
   background-color: #D3D3D3;
+  margin: .6em;
 }
 
 .pokename {
-  margin-top: 30%;
   font-weight: bold;
-  font-size: 3.2em;
+  text-align: center;
+}
+
+#submit-btn {
+  width: 90%;
+  background-color: #28AAFD;
+  padding: .5em;
+  margin: .5em;
+  border-radius: .5em;
+  font-size: 1.4em;
+  color: #FFF;
+}
+
+#submit-btn:focus {
+  outline: none;
 }
